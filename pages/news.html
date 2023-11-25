@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="wrapper d-flex align-items-stretch">
+                <nav id="sidebar">
+                    <h1><a href="../index.html" class="logo">News App</a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="../index.html"><span class="fa fa-home mr-3"></span><img src="../images/home-icon.png" alt="Home Icon"> Home</a>
+                        </li>
+                        <li class="">
+                            <a href="./news.html"><span class="fa fa-newspaper-o mr-3"></span><img src="../images/news-icon.png" alt="News Icon"> News</a>
+                        </li>
+                        <li>
+                            <a href="./search.html"><span class="fa fa-search mr-3"></span><img src="../images/search-icon.png" alt="Search Icon"> Search</a>
+                        </li>
+                        <li>
+                            <a href="./setting.html"><span class="fa fa-cogs m-3"></span><img src="../images/setting-icon.png" alt="Setting Icon"> Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>      
+    </div>  
+    <div class="content">
+        <div class="container">
+            <h1>News</h1>
+            <div id="news-container"></div>
+            <button id="btn-prev">Previous</button>
+            <span id="page-num">1</span>
+            <button id="btn-next">Next</button>
+        </div>
+    </div>
+    <script src="../models//User.js"></script>
+    <script src="../scripts//storage.js"></script>
+    <script src="../scripts/news.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsApp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device width, initial scale-1, shrink to fit-no">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .content {
+            padding: 150px;
+            background-color: rgb(251, 225, 249);
+            background-image: url('/images/news-bg.png'); 
+            background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ phần nền */
+            background-position: center; /* Căn giữa ảnh */
+            background-repeat: no-repeat; /* Không lặp lại ảnh */
+            margin-bottom: 0px;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="wrapper d-flex align-items-stretch">
+                <nav id="sidebar">
+                    <h1><a href="index.html" class="logo">News App</a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li class="active">
+                            <a href="./index.html"><span class="fa fa-home mr-3"></span><img src="images/home-icon.png" alt="Home Icon"> Home</a>
+                        </li>
+                        <li class="">
+                            <a href="./pages/news.html"><span class="fa fa-newspaper-o mr-3"></span><img src="images/news-icon.png" alt="News Icon"> News</a>
+                        </li>
+                        <li>
+                            <a href="./pages/search.html"><span class="fa fa-search mr-3"></span><img src="images/search-icon.png" alt="Search Icon"> Search</a>
+                        </li>
+                        <li>
+                            <a href="./pages/setting.html"><span class="fa fa-cogs m-3"></span><img src="images/setting-icon.png" alt="Setting Icon"> Settings</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+            </div>
+        </div>      
+    </div>      
+
+
+<!--Page content-->
+<div class="content">
+    <div id="login-modal">
+        <p>Please Login or Register</p>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="./pages/login.html" class="btn btn-primary btn-block">Login</a>
+            </div>
+            <div class="col-md-3">
+                <a href="./pages/register.html" class="btn btn-primary btn-block">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Home</h1>
+        <p id="welcome-message"></p>
+        <br>
+        <button type="button" class="btn btn-primary" id="btn-logout">Logout</button>
+    </div>
+</div>
+
+    
+          
+    <script src=".//models/User.js"></script>
+    <script src=".//scripts//storage.js"></script>
+    <script src="./scripts/home.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

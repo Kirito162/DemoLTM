@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 200px;
+    height: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.sidebar h1 {
+    margin-bottom: 20px;
+    background-color: #0088ff; /* Màu xanh lá cây */
+    padding: 10px;
+    text-align: center; /* Can giữa theo chiều ngang */
+    line-height: 1.2; /* Điều chỉnh khoảng cách dòng */
+    display: flex;
+    align-items: center; /* Can giữa theo chiều dọc */
+    justify-content: center; /* Can giữa theo chiều ngang */
+    font-weight: bold;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex; /* Sử dụng flex để căn chỉnh hình ảnh và văn bản */
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd; /* Vạch ngăn cách */
+}
+
+.sidebar a img {
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+    width: 40px; /* Kích thước hình ảnh */
+    height: 40px;
+    object-fit: cover; /* Giữ tỷ lệ khung hình */
+    border-radius: 50%; /* Chuyển hình vuông thành hình tròn */
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua */
+}
+
+
+/* .login-btn, .register-btn {
+    padding: 10px;
+    background-color: #006aff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+} */
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+#login-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 300px; /* Điều chỉnh chiều rộng nếu cần */
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%; /* Điều chỉnh chiều rộng nếu cần */
+    max-width: 400px; /* Điều chỉnh chiều rộng tối đa nếu cần */
+    margin: 0 auto; /* Can giữa form trong content */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #006aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#login-modal p {
+    text-align: center; /* Can giữa theo chiều ngang */
+}
+
+
+#main-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-content h1 {
+    text-align: center; /* Can giữa theo chiều ngang */
+}
+
+#login-modal h1,
+#register-modal h1 {
+    text-align: center; /* Can giữa theo chiều ngang */
+}
+
+#main-content button {
+    display: block; /* Để nút hiển thị trên một dòng riêng biệt */
+    margin: 0 auto; /* Can giữa theo chiều ngang */
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(231 225 251); /* Màu xanh dương nhạt cho phía bên phải */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.content h1 {
+    text-align: center; /* Can giữa theo chiều ngang */
+    margin-bottom: 20px; /* Khoảng cách phía dưới tiêu đề */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #006aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#news-container,
+#nav-page-num {
+    margin-top: 20px; /* Khoảng cách phía trên */
+    text-align: center; /* Can giữa theo chiều ngang */
+}
+
+#nav-page-num button {
+    margin: 0 10px; /* Khoảng cách giữa các nút */
+}
+
+/* ... (các styles hiện tại) */
+
+
+.new-content {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-banner {
+    flex: 1;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.img-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content h4 {
+    margin-bottom: 10px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content button {
+    background-color: #006aff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Thêm để loại bỏ đường gạch chân mặc định cho các liên kết */
+}
+
+.content button {
+    background-color: #3498db; /* Màu xanh dương */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Loại bỏ đường gạch chân mặc định cho các liên kết */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+.content button:hover {
+    background-color: #2980b9; /* Màu xanh dương tối hơn khi di chuột qua */
+}
+
